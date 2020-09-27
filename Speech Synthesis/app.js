@@ -9,7 +9,7 @@ const msg = new SpeechSynthesisUtterance();
   function populateVoices() {
     voices = this.getVoices();
     voicesDropdown.innerHTML = voices
-      .filter(voice => voice.lang.includes('en'))
+      // .filter(voice => voice.lang.includes('en'))
       .map(voice => `<option value="${voice.name}">${voice.name} (${voice.lang})</option>`)
       .join('');
   }
